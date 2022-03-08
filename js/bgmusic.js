@@ -13,6 +13,7 @@ var pbutton = document.getElementById("play-icon");
 var sbutton = document.getElementById("pause-icon");
 var nextb = document.getElementById("next-icon");
 var prevb = document.getElementById("prev-icon");
+var loopb = document.getElementById("loop-icon");
 
 pbutton.addEventListener("click", () => {
   music.play();
@@ -28,6 +29,16 @@ nextb.addEventListener("click", () => {
 
 prevb.addEventListener("click", () => {
   prev();
+});
+
+loopb.addEventListener("click", () => {
+  if(music.loop === true) {
+    music.loop = false;
+    loopb.textContent = "Loop: Off";
+  } else {
+    music.loop = true;
+    loopb.textContent = "Loop: On";
+  }
 });
 
 const calculateTime = (secs) => {
