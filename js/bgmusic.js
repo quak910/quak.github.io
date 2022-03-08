@@ -116,7 +116,7 @@ if (music === null) {
 }
 
 function prev() {
-  if (i === 0 - 1) {
+  if (i === 0) {
       i = tracks.length - 1;
   } else {
       i--;
