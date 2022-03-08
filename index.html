@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+        <meta charset="utf-8">
+        <title>quak</title>
+        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/jpg" href="./image/favicon.jpg">
+        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/gist.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/music.css" media="all" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css"><!-- google fonts end -->
+        <script src="https://kit.fontawesome.com/3e2d5ff50d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class='cursor' id="cursor"></div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div>
+        <div class="preloader-bg"></div>
+        <div id="preloader">
+            <div id="preloader-status">
+                <div class="preloader-position loader">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-trigger top-position" id="menu-mobile-btn">
+            <button class="lines-button minus menu-toggle" id="menu-mobile-caller" type="button"><span class="lines inverse"></span></button>
+        </div>
+        <div id="ui-layer">
+            <div id="menu-wrapper">
+                <div id="menu-mobile">
+                    <div class="menu-nav-wrapper">
+                        <nav class="menu-nav">
+                            <ul>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu active call-home" data-page="home">Main</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" data-page="about">About</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" data-page="blogs">Blogs</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" data-page="compiler">Compiler</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" data-page="discordbot">Discord Bot</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" data-page="music">Music controller</a>
+                                </li>
+                                <li class="credits">
+                                    <a>quak</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="the-borders border-top top-position"></div>
+        <div class="the-borders border-left left-position"></div>
+        <div class="the-borders border-right right-position"></div>
+        <div class="the-borders border-bottom bottom-position"></div>
+        <canvas class="bottom-position" id="wave"></canvas>
+        <div class="the-bottom-credits bottom-position">
+            <div class="bottom-credits">
+                <a href="#">quak &copy; 2022</a>
+            </div>
+        </div>
+        <div class="hero-fullscreen">
+            <div class="hero-fullscreen-FIX">
+                <div class="hero-bg overlay overlay-dark-65-video">
+                    <div id="videoContainment">
+                        <div class="player" data-property=
+                        "{videoURL: 'ew3R89ATHEI', containment: '#videoContainment', showControls: false,  autoPlay: true, loop: true, vol: 50, mute: true, startAt: 0, stopAt: 0, opacity: 1, addRaster: true, quality: 'large', optimizeDisplay: true, ratio: 16/9}"
+                        id="bgndVideo"></div>
+                    </div>
+                    <div class="YT-bg"></div>
+                </div>
+            </div>
+        </div>
+        <div id="pages">
+            <div class="upper-page current page" data-page="home" id="home">
+                <div class="center-container-home">
+                    <div class="center-block-home">
+                        <div class="upper-content">
+                            <div class="container sections-home">
+                                <div class="row introduction">
+                                    <h2 class="home-page-title fadeIn-element">
+                                        ¯\_(ツ)_/¯
+                                    </h2>
+                                    <div class="inner-divider-half"></div>
+                                    <h1 class="home-page-title fadeIn-element">
+                                        quak
+                                    </h1>
+                                    <div class="inner-divider-half"></div>
+                                    <div class="button-the-wrapper fadeIn-element">
+                                        <a>Ba anh em siêu nhân</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-page page hide" data-page="blogs" id="blogs">
+                <div class="center-container">
+                    <div class="center-block">
+                        <div class="lower-content">
+                            <div class="container sections">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <h2 class="section-subheading">
+                                            <span>MAIN</span>
+                                        </h2>
+                                        <div class="inner-divider-half"></div>
+                                        <h2 class="section-heading">
+                                            BLOGS
+                                        </h2>
+                                        <div class="inner-divider-full"></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="about-number-title">
+                                            <nav class="menu-nav">
+                                                <ul><a class="link-underline-menu call-page" data-page="blog1">#1</a></ul>
+                                            </nav>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <h4 class="about-heading">
+                                            C++ là gì?
+                                        </h4>
+                                        <div class="inner-divider"></div>
+                                        <p>
+                                            <a class="link-underline" href="https://vi.wikipedia.org/wiki/C%2B%2B" target="_blank"> Ngôn ngữ lập trình C++ </a> là một ngôn ngữ lập trình hướng đối tượng (OOP – Object-oriented programming) được phát triển bởi Bjarne Stroustrup. C++ là ngôn ngữ lập trình được phát triển trên nên tảng của ngôn ngữ lập trình C <a class="link-underline"></a>.
+                                        </p>
+                                        <div class="inner-divider visible-mobile-devices"></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="about-number-title">
+                                            <a class="link-underline-menu call-page" data-page="blog2">#2</a>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <h4 class="about-heading">
+                                            Một số bài tập C++
+                                        </h4>
+                                        <div class="inner-divider"></div>
+                                        <p>
+                                            Bạn là một sinh viên đang theo học công nghệ thông tin và cảm thấy bản thân có nhiều thời gian rảnh? Hãy luyện thêm một số bài tập tại <a class="link-underline" href="https://vnoi.info/" target="_blank">VNOI</a>, <a class="link-underline" href="https://codeforces.com" target="_blank">CODEFORCES</a>.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="about-number-title">
+                                            <a class="link-underline-menu call-page" data-page="blog1">#3</a>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <h4 class="about-heading">
+                                            Chương trình C++ đầu tiên
+                                        </h4>
+                                        <div class="inner-divider"></div>
+                                        <p><a class="link-underline" href="https://gist.github.com/quak910/013696ed4ce2f02dbff16d61d19d978e" target="_blank"> Hello World.cpp </a><div class="gist"><script src="https://gist.github.com/quak910/013696ed4ce2f02dbff16d61d19d978e.js"></script></div></p>
+                                        <div class="inner-divider visible-mobile-devices"></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="about-number-title">
+                                            <a class="link-underline-menu call-page" data-page="blog1">#4</a>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <h4 class="about-heading">
+                                            Xúc xắc bò
+                                        </h4>
+                                        <div class="inner-divider"></div>
+                                        <p><a class="link-underline" href="https://gist.github.com/quak910/fd718c42bd33c7438f8417162df946bb" target="_blank">XUCXACBO.cpp</a>. Đọc đề và nộp bài tại <a class="link-underline" href="https://oj.vnoi.info/problem/bones" target="_blank">đây</a>.<div class="gist"><script src="https://gist.github.com/quak910/fd718c42bd33c7438f8417162df946bb.js"></script></div></p>
+                                        <div class="inner-divider visible-mobile-devices"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-page page hide" data-page="compiler" id="compiler">
+                <div class="center-container">
+                    <div class="center-block">
+                        <div class="lower-content">
+                            <div class="container sections">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <h2 class="section-subheading">
+                                            <span>MAIN</span>
+                                        </h2>
+                                        <div class="inner-divider-half"></div>
+                                        <h2 class="section-heading">
+                                            COMPILER
+                                        </h2>
+                                        <div class="inner-divider-full"></div>
+                                        <br>
+                                        <div class="sec-widget" data-widget="9e1e25c224b32a941cccc468d284e148"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-page page hide" data-page="music" id="music">
+                <div class="center-container">
+                    <div class="center-block">
+                        <div class="lower-content">
+                            <div class="container sections">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <h2 class="section-subheading">
+                                            <span>MAIN</span>
+                                        </h2>
+                                        <div class="inner-divider-half"></div>
+                                        <h2 class="section-heading">
+                                            MUSIC CONTROLLER
+                                        </h2>
+                                        <div class="inner-divider-full"></div>
+                                        <h4 class="compare-heading">Now playing: </h4><br><h4 id="song-name" class="compare-heading"></h4>
+                                        <div class="inner-divider-half"></div>
+                                        <audio autoplay id="bgmusic">
+                                        </audio>
+                                        <span id="current-time" class="compare-heading">0:00</span>
+                                        <div id="timeline">
+                                            <div id="playhead"></div>
+                                        </div>
+                                        <span id="duration" class="compare-heading">0:00</span>
+                                        <div class="inner-divider-half"></div>
+                                        <button class="compare-heading" id="prev-icon">Prev</button>
+                                        <button class="compare-heading" id="play-icon">PLay</button>
+                                        <button class="compare-heading" id="pause-icon">Pause</button>
+                                        <button class="compare-heading" id="next-icon">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-page page hide" data-page="discordbot" id="discordbot">
+                <div class="center-container">
+                    <div class="center-block">
+                        <div class="lower-content">
+                            <div class="container sections">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <img src="./image/quakprofile.png" alt="quak" style="float: right; border-radius: 20%; box-shadow: 0px 0px 10px 5px #B24BF3">
+                                        <h2 class="section-subheading">
+                                            <span>MAIN</span>
+                                        </h2>
+                                        <div class="inner-divider-half"></div>
+                                        <h2 class="section-heading">
+                                            DISCORD BOT
+                                        </h2>
+                                        <div class="inner-divider-full"></div>
+                                        <img src="./image/quak.png" alt="quak" style="float: right; border-radius: 2.5%; box-shadow: 0px 0px 10px 5px #B24BF3">
+                                        <h4 class="about-heading">quak | A Vietnamese Discord bot</h4>
+                                        <div class="inner-divider-half"></div>
+                                        <h4 class="about-heading">Made by quak#4951</h4>
+                                        <div class="inner-divider-half"></div>
+                                        <h4 class="about-heading">Categories 📑</h4>
+                                        <div class="inner-divider-half"></div>
+                                        <h4 class="about-heading">- ✅ Moderation</h4>
+                                        <h4 class="about-heading">- ✅ Info</h4>
+                                        <h4 class="about-heading">- ✅ Giveaway</h4>
+                                        <h4 class="about-heading">- ✅ Fun</h4>
+                                        <h4 class="about-heading">- ✅ Help</h4>
+                                        <h4 class="about-heading">- ✅ Suggestions</h4>
+                                        <h4 class="about-heading">- ✅ Soundboard</h4>
+                                        <h4 class="about-heading">- ✅ Utility</h4>
+                                        <h4 class="about-heading">- ✅ Music</h4>
+                                        <div class="inner-divider-half"></div>
+                                        <div class="invbutton">
+                                            <div class="compare-heading">
+                                                <button id="inv" style="float: left; margin-left: 10px;">Invite Bot</button>
+                                                <button id="server" style="float: left; margin-left: 5px;">Support Server</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-page page hide" data-page="blog1" id="blog1">
+                <div class="center-container">
+                    <div class="center-block">
+                        <div class="lower-content">
+                            <div class="container sections">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <h2 class="section-subheading">
+                                            <span>BLOGS</span>
+                                        </h2>
+                                        <div class="inner-divider-half"></div>
+                                        <h2 class="section-heading">
+                                            BLOG #1
+                                        </h2>
+                                        <div class="inner-divider-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-page page hide" data-page="about" id="about">
+                <div class="center-container">
+                    <div class="center-block">
+                        <div class="lower-content">
+                            <div class="container sections">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <h2 class="section-subheading">
+                                            <span>MAIN</span>
+                                        </h2>
+                                        <div class="inner-divider-half"></div>
+                                        <h2 class="section-heading">
+                                            ABOUT US
+                                        </h2>
+                                        <div class="inner-divider-full"></div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="service-number-title">
+                                            <img src="./image/cat.jpg" alt="quak" style="width: 100px;height: 100px;border-radius: 50%;">
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <div class="show-skillbar">
+                                            <div class="skillbar" data-percent="100">
+                                                <span class="skillbar-title">quak</span>
+                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                            </div>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <p>
+                                            <a class="link-underline" href="https://www.facebook.com/quak91/" target="_blank">Facebook</a>
+                                            <br>
+                                            <a class="link-underline" href="https://www.instagram.com/poqpwppy/" target="_blank">Instagram</a>
+                                            <br>
+                                            <a class="link-underline" href="https://github.com/quak91" target="_blank">Github</a>
+                                        </p>
+                                        <div class="inner-divider visible-mobile-devices"></div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="service-number-title">
+                                            <img src="./image/cat2.jpeg" alt="nghia" style="width: 100px;height: 100px;border-radius: 50%;">
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <div class="show-skillbar">
+                                            <div class="skillbar" data-percent="100">
+                                                <span class="skillbar-title">sixpeckcantswi_</span>
+                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                            </div>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <p>
+                                            <a class="link-underline" href="https://www.facebook.com/nghia.quochoc" target="_blank">Facebook</a>
+                                            <br>
+                                            <a class="link-underline" href="https://www.instagram.com/sixpeckcantswi_/" target="_blank">Instagram</a>
+                                        </p>
+                                        <div class="inner-divider visible-mobile-devices"></div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="service-number-title">
+                                            <img src="./image/tommy.jpg" alt="dhoang" style="width: 100px;height: 100px;border-radius: 50%;">
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <div class="show-skillbar">
+                                            <div class="skillbar" data-percent="100">
+                                                <span class="skillbar-title">shrimpmytran</span>
+                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                            </div>
+                                        </div>
+                                        <div class="inner-divider"></div>
+                                        <p>
+                                            <a class="link-underline" href="https://www.facebook.com/profile.php?id=100028922536785" target="_blank">Facebook</a>
+                                            <br>
+                                            <a class="link-underline" href="https://www.instagram.com/shrimpmytran/" target="_blank">Instagram</a>
+                                        </p>
+                                        <div class="inner-divider visible-mobile-devices"></div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/plugins.js"></script> 
+        <script src="js/yume.js"></script>
+        <script src="js/bgmusic.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/invbutton.js"></script>
+        <script>SEC_HTTPS = true;
+            SEC_BASE = "compilers.widgets.sphere-engine.com"; 
+            (function(d, s, id){ SEC = window.SEC || (window.SEC = []);
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
+              js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+              fjs.parentNode.insertBefore(js, fjs);   
+            }(document, "script", "sphere-engine-compilers-jssdk"));
+        </script>
+    </body>
+</html>
