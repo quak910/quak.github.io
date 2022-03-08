@@ -8,6 +8,7 @@ var timeline = document.getElementById('timeline');
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 music.volume = 0.5;
+music.loop = false;
 
 var pbutton = document.getElementById("play-icon");
 var sbutton = document.getElementById("pause-icon");
