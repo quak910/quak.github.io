@@ -14,5 +14,5 @@ server.addEventListener("click", () => {
 
 mainpage.addEventListener("click", () => {
     window.open(
-        "https://poqpwppy.github.io/");
+        "https://poqpwppy.github.io/", "_self");
 });
