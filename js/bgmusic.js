@@ -16,6 +16,8 @@ var nextb = document.getElementById("next-icon");
 var prevb = document.getElementById("prev-icon");
 var loopb = document.getElementById("loop-icon");
 
+music.play();
+
 pbutton.addEventListener("click", () => {
   music.play();
 });
