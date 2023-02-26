@@ -2,6 +2,10 @@
 
 .gist-meta{display: none;}
 
+body::-webkit-scrollbar {
+	 display: none;
+}
+
 .cursor,
 .cursor2,
 .cursor3 {
