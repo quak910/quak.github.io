@@ -2,8 +2,8 @@
 
 .gist-meta{display: none;}
 
-body::-webkit-scrollbar {
-	 display: none;
+body {
+  overflow: hidden; /* Hide scrollbars */
 }
 
 .cursor,
